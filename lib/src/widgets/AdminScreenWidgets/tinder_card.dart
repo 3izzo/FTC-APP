@@ -46,7 +46,7 @@ class TinderCard extends StatelessWidget {
                             topRight: Radius.circular(8.0)),
                         image: DecorationImage(
                           image: NetworkImage(
-                              "http://157.245.240.12:8080/api/images/" +
+                              "http://127.0.0.1:8080/api/images/" +
                                   image.id.toString()),
                           fit: BoxFit.cover,
                         ),

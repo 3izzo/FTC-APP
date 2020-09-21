@@ -33,7 +33,7 @@ class MemberImage extends StatelessWidget {
 
   _getImage() {
     return thumb
-        ? "http://157.245.240.12:8080/api/users/" + id.toString() + "/thumb"
-        : "http://157.245.240.12:8080/api/users/" + id.toString() + "/image";
+        ? "http://127.0.0.1:8080/api/users/" + id.toString() + "/thumb"
+        : "http://127.0.0.1:8080/api/users/" + id.toString() + "/image";
   }
 }

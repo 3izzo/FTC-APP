@@ -13,7 +13,13 @@ import 'package:ftc_application/src/models/message_of_the_day.dart';
 import 'dart:convert';
 
 class FtcApiClient {
-  static var baseUrl = "http://157.245.240.12:8080/api/";
+  //this is your local host beb
+  //if your using your phone run this command to switch from using the phones
+  //local host to your PC
+  // adb reverse tcp:8080 tcp:8080
+  //Don't forget to setup your own firebase notification files and google api files
+
+  static var baseUrl = "http://127.0.0.1:8080/api/";
 
   static BaseOptions options = new BaseOptions(
     baseUrl: baseUrl,

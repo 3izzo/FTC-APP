@@ -54,13 +54,13 @@ class ProfileImagePreview extends StatelessWidget {
   Widget _getImage() {
     if (adminPreview) {
       return Image.network(
-        "http://157.245.240.12:8080/api/images/" + memberImage.id.toString(),
+        "http://127.0.0.1:8080/api/images/" + memberImage.id.toString(),
         alignment: Alignment.center,
       );
     } else {
       return member.hasProfileImage
           ? Image.network(
-              "http://157.245.240.12:8080/api/users/" +
+              "http://127.0.0.1:8080/api/users/" +
                   member.id.toString() +
                   "/image",
               alignment: Alignment.center,
